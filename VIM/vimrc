@@ -1,0 +1,10 @@
+set number
+set cursorcolumn
+set cursorline
+
+colorscheme BlackSea 
+syntax on
+
+au BufRead,BufNewFile *.json set filetype=json
+au! Syntax json source /Users/matteomori/.vim/ftplugin/json.vim
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/ftplugin/yaml.vim
